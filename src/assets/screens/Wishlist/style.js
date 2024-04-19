@@ -1,0 +1,122 @@
+import { StyleSheet,Dimensions } from "react-native";
+import colors from "../../components/common/colours";
+
+
+const style=(width,height)=>StyleSheet.create({
+    container:
+    {
+     flex:1,
+    backgroundColor:colors.white_level_2,
+    padding:15,
+},
+removeView:{
+position:'absolute',
+top:-10,
+right:0,
+backgroundColor:colors.red,
+borderRadius:10,
+overflow:'hidden',
+padding:10,
+},
+remove:{
+marginLeft:5,
+width:20,
+height:20,
+resizeMode:'contain'
+},
+price:{
+    fontFamily:'Lato-Bold',
+    fontSize:15,
+    color:colors.black,
+},
+productView:{
+alignSelf:'center',
+backgroundColor:colors.white,
+borderRadius:15,
+overflow:'hidden',
+flexDirection:'row',
+alignItems:'center',
+width:width*0.9,
+padding:15,
+marginTop:15
+},
+cartIcon:{
+    width:30,
+    height:30,
+    resizeMode:'contain',
+    marginRight:15,
+},
+productImage:{
+    width:70,
+    height:80,
+    resizeMode:'contain',
+},
+secondView:{
+    borderColor:colors.grey,
+    borderRadius:1,
+    paddingLeft:10,
+    marginLeft:10,
+    width:width*0.6,
+    overflow:'hidden'
+},
+title:{
+    fontFamily:'Lato-Bold',
+    fontSize:14,
+    color:colors.black,
+},
+desc:{
+    fontFamily:'Lato-Regular',
+    fontSize:16,
+    color:colors.black_level_3,
+},
+bottomView:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    marginVertical:5
+},
+offView:{
+    borderRadius:15,
+    backgroundColor:colors.primarygreen,
+    padding:12,
+    marginHorizontal:2
+},
+offText:{
+    fontFamily:'Lato-Regular',
+    fontSize:14,
+    color:colors.white,
+},
+cartView:{
+    borderRadius:15,
+    borderColor:colors.primarygreen,
+    borderWidth:1,
+    padding:5,
+    marginHorizontal:2
+},
+cartCount:{
+ position:'absolute',
+ right:10,
+ top:-10,
+ backgroundColor:colors.red,
+ justifyContent:'center',
+ alignItems:'center',
+ borderRadius:14,
+ overflow:'hidden',
+ paddingHorizontal:6,
+ paddingVertical:2,
+ zIndex:9,
+},
+cartText:{
+    fontFamily:'Lato-Regular',
+    fontSize:13,
+    color:colors.primarygreen,
+},
+count:{
+    fontFamily:'Lato-Regular',
+    fontSize:10,
+    color:colors.white,
+}
+}
+);
+
+export default style;
